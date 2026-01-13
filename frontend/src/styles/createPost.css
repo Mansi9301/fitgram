@@ -1,0 +1,110 @@
+.add-post-container {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10; 
+}
+
+.add-post-sticky {
+  position: sticky;
+  top: 100px;
+  overflow-y: auto; 
+}
+
+.create-post {
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  margin: 20px 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin: 20px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.post-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #555;
+}
+
+.upload-icon {
+  margin-right: 10px;
+  color: #555;
+}
+
+.upload-text {
+  font-size: 0.9em;
+}
+
+.image-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.recommended-posts {
+  width: 90%;
+  padding: 20px;
+  height: 70vh;
+  overflow-y: auto; 
+  border-radius: 12px;
+}
+
+@media (max-width: 1100px) {
+  .add-post-container {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .add-post-sticky {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .create-post {
+    width: 100%;
+  }
+}

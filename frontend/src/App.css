@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.App {
+  font-family: Arial, sans-serif;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+img{
+  max-height: 600px;
+  object-fit: contain;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+form button{
+  align-self: flex-end;
+  background-color: #282c34;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.home_container{
+  display: flex;
+}
+::-webkit-scrollbar {
+  display: none; /* Hides scrollbar */
+}

@@ -1,0 +1,94 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/src/assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .image-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .login-container {
+    position: relative;
+    left: 30%;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(80%);
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: .5s;
+    &:hover {
+        background-color: #ec5757;
+    }
+  }
+  
+  .login-container .additional-options {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-container .additional-options a {
+    color: #282c34;
+    text-decoration: none;
+    font-size: 14px;
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+  .image-container {
+      display: none !important;
+    }
+    .login-container {
+      width: 100%;
+    }
+  }

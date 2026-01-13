@@ -1,0 +1,62 @@
+.horizontal-user-stories {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.horizontal-user-stories::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.story-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #f06292;
+  padding: 3px;
+  transition: transform 0.3s ease;
+}
+
+.story-avatar:hover {
+  transform: scale(1.1);
+}
+
+.story-username {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.add-story .add-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e0e0e0; 
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #f06292;
+}
+
+.add-story:hover .add-icon {
+  background-color: #f06292;
+  color: #fff;
+}
